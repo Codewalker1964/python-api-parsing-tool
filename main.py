@@ -6,10 +6,11 @@ from config import m
 m = mokkari.api(api_token=m.api_token)
 
 # Get all Marvel comics for the week of 2021-06-07
+# TODO: Update the date range to be accurate for the current week, and retrieve more issues
 this_week = m.issues_list(
     {
-        "store_date_range_after": "2021-06-07",
-        "store_date_range_before": "2021-06-13",
+        "store_date_range_after": "2026-09-13",
+        "store_date_range_before": "2026-09-07",
         "publisher_name": "marvel",
     }
 )
